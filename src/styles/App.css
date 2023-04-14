@@ -1,3 +1,14 @@
-h1 {
-    color: gray;
+@font-face {
+    font-family: "Cormorant SemiBoldItalic";
+    src: local("Cormorant"),
+    url("../fonts/Cormorant/Cormorant-SemiBoldItalic.ttf");
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Cormorant SemiBoldItalic", serif;
+}
+
+
+
