@@ -1,6 +1,7 @@
 import * as React from "react";
 import Map from "./Map";
 import Weather from "./Weather";
+import WeatherCity from "./WeatherCity";
 import "../styles/Check.css";
 
 function Check() {
@@ -36,6 +37,7 @@ function Check() {
     return (
         <>
             <h1>{status}</h1>
+            <WeatherCity/>
             <Map latitud={latitud} longitud={longitud}/>
             <Weather lati={latitud} longi={longitud}/>
         </>
