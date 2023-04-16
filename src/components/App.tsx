@@ -6,7 +6,6 @@ import Main from "./Main";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-
 class App extends React.Component<any, any> {
     render() {
         return (

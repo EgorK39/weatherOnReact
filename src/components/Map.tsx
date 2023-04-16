@@ -12,26 +12,31 @@ function Map(props) {
     }
     const defaultProps = {
         center: {
-            lat: 11.99835602,
-            lng: 77.01502627
+            lat: 55.7522200,
+            lng: 37.6155600
 
         },
         zoom: 14
     };
     return (
         <>
-            <h1>{+props.latitud.toFixed(2)},
-                {+props.longitud.toFixed(2)} from MAP</h1>
-            <h2>{typeof props.latitud} {typeof props.longitud}</h2>
-            <div style={{height: '60vh', width: '70%'}}>
-                <GoogleMapReact
-                    bootstrapURLKeys={{key: ""}}
-                    defaultCenter={defaultProps.center}
-                    defaultZoom={defaultProps.zoom}
-                    center={center.center}
-                >
+            <div id={"divId"}>
+                {/*<h1>{+props.latitud.toFixed(2)},*/}
+                {/*    {+props.longitud.toFixed(2)} from MAP</h1>*/}
+                {/*<h2>{typeof props.latitud} {typeof props.longitud}</h2>*/}
+                <div style={{
+                    height: '60vh', width: '70%',
+                    margin: '10px auto'
+                }}>
+                    <GoogleMapReact
+                        bootstrapURLKeys={{key: ""}}
+                        defaultCenter={defaultProps.center}
+                        defaultZoom={defaultProps.zoom}
+                        center={center.center}
+                    >
 
-                </GoogleMapReact>
+                    </GoogleMapReact>
+                </div>
             </div>
         </>
 

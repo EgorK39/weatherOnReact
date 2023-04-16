@@ -1,0 +1,10 @@
+.div {
+    text-align-last: center;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    border: solid #3f3d3d;
+    border-radius: 10%;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 7%);
+
+}

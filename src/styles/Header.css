@@ -1,3 +1,9 @@
 header {
+    margin: 2px;
     background: gray;
+    height: 3vw;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 20px;
 }
+

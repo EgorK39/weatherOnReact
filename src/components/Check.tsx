@@ -3,6 +3,7 @@ import Map from "./Map";
 import Weather from "./Weather";
 import WeatherCity from "./WeatherCity";
 import "../styles/Check.css";
+import WeatherCityNEW from "./WeatherCityNEW";
 
 function Check() {
     let [status, setStatus] = React.useState('');
@@ -13,8 +14,8 @@ function Check() {
     const success = function (position) {
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
-        setStatus(status = `Широта: ${latitude}, 
-        Долгота: ${longitude}`);
+        setStatus(status = `Ваше текущее местоположение. 
+        Широта: ${latitude}, Долгота: ${longitude}`);
         setLatitude(latitud = latitude);
         setLongitude(longitud = longitude);
 
@@ -34,15 +35,19 @@ function Check() {
             );
         }
     });
+
     return (
         <>
             <h1>{status}</h1>
             <WeatherCity/>
             <Map latitud={latitud} longitud={longitud}/>
-            <Weather lati={latitud} longi={longitud}/>
+            {latitud && longitud ? <Weather lati={latitud} longi={longitud}/> :
+                ''}
+
         </>
 
     )
 }
 
+// https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 export default Check;

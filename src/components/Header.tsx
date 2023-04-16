@@ -4,7 +4,7 @@ import "../styles/Header.css";
 class Header extends React.Component<any, any> {
     render() {
         return (
-            <header>Header</header>
+            <header>Cервис просмотра информации о погоде</header>
         )
     }
 }

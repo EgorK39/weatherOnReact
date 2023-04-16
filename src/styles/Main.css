@@ -1,4 +1,10 @@
 main {
+    margin: 3px auto 2px;
     color: blue;
-    background: rosybrown;
+    background: #d0d0d0;
+    border-radius: 3px;
+    width: 80%;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 7%);
+
 }
+
